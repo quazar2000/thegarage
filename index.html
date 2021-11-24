@@ -1,115 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
-      <link rel="stylesheet" href="stylesheets/main.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"> 
-    <!-- <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script> -->
-    <!-- <script type="text/javascript">
-        var map;
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Aibek Sarsembayev">
+    <title>TheGarage - Intro</title>    
+
+    <!-- Bootstrap core CSS -->
+<link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
     
-        DG.then(function () {
-            map = DG.map('map', {
-                center: [51.090428, 71.426915],
-                zoom: 17
-            });
-            DG.marker([51.090198, 71.42681]).addTo(map).bindPopup('Мы здесь!');
-        });
-    </script> -->
+    <!-- Custom styles for this template -->
+    <link href="stylesheets/cover.css" rel="stylesheet">
+    <link href="stylesheets/features.css" rel="stylesheet">
+  </head>
 
-      <title>The Garage</title>
-   </head>
-
-   <body>
-
-    <!-- Header -->
-    <header class="primary-header container group">
-        
-        <a class="logo"><embed src="stylesheets/img/logo0.svg" href="index.html" type="image/svg+xml" width="200" height="50" /></a>     
-       
-        <h3 class="tagline">Нур-Султан, Мангилик Ел, 54</h3>
-
-        <nav class="nav primary-nav">
-            <ul>
-                <li><a class="btn btn-alt" href="#about">О Нас</a></li><!--
-                --><li><a class="btn btn-alt" href="#services">Услуги</a></li></li><!--
-                --><li><a class="btn btn-alt" href="#location">Как Доехать</a>  </li><!--
-                --><li><a class="btn-call" href="#contact">Связаться с Нами</a>  </li>
-            </ul>                         
-        </nav>
-
-    </header>
-
-    <section class="grid">       
-        <h5><a name="about"></a>О Нас</h5>
-        <h3>Заголовок</h3>
-        <p>Описание</p>
-    </section>
-
-    <section class="row-alt">
-        <div class="grid"><a name="services"></a>
-            <!-- Carwash -->
-            <section class="teaser col-1-3">
-                <h5>Мойка</h5>
-                <img src="images/home/carwash0.jpg" alt="">
-                <h3>Заголовок</h3>
-                <p>Описание</p>
-            </section><!--
-        
-                Service station
-                
-            --><section class="teaser col-1-3">
-                <h5>СТО Автоподбор</h5>
-                <img src="images/home/ss0.jpg" alt="">
-                <h3>Заголовок</h3>
-                <p>Описание</p>
-            </section><!--
+  <body class="d-flex h-100 text-center text-white "> 
+   
     
-            Oil exchange
-            
-            --><section class="teaser col-1-3">
-                <h5>Замена масел</h5>
-                <img src="images/home/oilservice0.jpg" alt="">
-                <h3>Заголовок</h3>
-                <p>Описание</p>
-            </section>
+<div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <img class="float-md-start mb-0" src="stylesheets/img/logo/logo0.svg" alt="Bootstrap" height="40">
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+        <a class="nav-link" href="#">Услуги</a>
+        <a class="nav-link" href="#">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  
+
+  <main class="px-3">
+    
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Выберите категорию</h2>
+  
+      
+      <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
+        <div class="col">
+          
+          <a href="carwash-main.html">          
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('stylesheets/img/home/carwash0.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-13 fw-bold">Автомойка</h2>
+            </div>
+          </div>
+        </a>
+
+
         </div>
-    </section>    
+  
+        <div class="col">
+          <a href="ss-main.html">          
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('stylesheets/img/home/ss0.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">СТО Автоподбор</h2>
+            </div>
+          </div>
+        </a>
 
-    <section class="grid">        
-        <h5><a name="location"></a>Как Доехать</h5>
-        <h3>Заголовок</h3>
-        <p>Описание</p>
+        </div>
+  
+        <div class="col">
+          <a href="tyre-main.html">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('stylesheets/img/home/tyre0.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Шиномонтаж</h2>
+            </div>
+          </div>
+          </a>
 
-        <!-- <div id="map" style="width:900px; height:600px"></div> -->
+        </div>
 
-        <a class="dg-widget-link" href="http://2gis.kz/nur_sultan/firm/70000001050905595/center/71.42688274383546,51.0904372264871/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Нур-Султана</a><div class="dg-widget-link"><a href="http://2gis.kz/nur_sultan/firm/70000001050905595/photos/70000001050905595/center/71.42688274383546,51.0904372264871/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.kz/nur_sultan/center/71.426879,51.090409/zoom/16/routeTab/rsType/bus/to/71.426879,51.090409╎The Garage?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до The Garage</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":640,"height":600,"borderColor":"#a3a3a3","pos":{"lat":51.0904372264871,"lon":71.42688274383546,"zoom":16},"opt":{"city":"nur_sultan"},"org":[{"id":"70000001050905595"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+        <div class="col">
+          <a href="oil-main.html">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('stylesheets/img/home/oilservice0.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Замена масел</h2>
+            </div>
+          </div>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  
 
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.95231966289!2d71.4240706519242!3d51.09088744879051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424585422fea5e59%3A0xfcb52b15cc55ac66!2sThe%20Garage!5e0!3m2!1sru!2skz!4v1634450126349!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-    </section>
+  </main>
 
-    <section class="grid" href="#contact">        
-        <h5><a name="contact"></a>Связаться с Нами</h5>
-        <h3>Заголовок</h3>
-        <p>Описание</p>
-    </section>
+  <footer class="mt-auto text-white-50">
+    <p>Powered for <a href="https://thegarage.kz" class="text-white">The Garage</a>, by <a href="https://zecodein.kz" class="text-white">zecodein</a>.</p>
+  </footer>
+</div>
 
-    <footer class="primary-footer container group">
 
-        <small>&copy; The Garage</small>
-
-        <nav class="nav">            
-            <ul>
-                <li><a class="btn btn-alt" href="#about">О Нас</a></li><!--
-                --><li><a class="btn btn-alt" href="#services">Услуги</a></li></li><!--
-                --><li><a class="btn btn-alt" href="#location">Как Доехать</a>  </li><!--
-                --><li><a class="btn-call" href="#contact">Связаться с Нами</a>  </li>
-            </ul>                         
-        </nav>
-    </footer>
-     
-   </body>
+    
+  </body>
 </html>
